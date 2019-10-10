@@ -1,0 +1,19 @@
+Download jdk : scp -r jdk1.8.0_221/ ec2-user@54.166.176.217:/home/ec2-user
+   Go to : cd jdk1.8.0_221/
+   43  sudo alternatives
+   44  sudo alternatives --install /usr/bin/java java /home/ec2-user/jdk1.8.0_221/bin/java 2
+   45  sudo alternatives --config java
+   46  cd
+   47  wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.0.M10/bin/apache-tomcat-9.0.0.M10.tar.gz
+   48  ls
+   49  tar apache-tomcat-9.0.0.M10.tar.gz
+   50  tar -xvzf apache-tomcat-9.0.0.M10.tar.gz
+   51  ls
+   52  rm apache-tomcat-9.0.0.M10.tar.gz
+   53  mv apache-tomcat-9.0.0.M10/ tomcat9
+   54  wget https://updates.jenkins-ci.org/latest/jenkins.war
+   55  ls
+   56  cp jenkins.war tomcat9/webapps/
+   57  ./tomcat9/bin/startup.sh
+   58  cat /home/ec2-user/.jenkins/secrets/initialAdminPassword
+   59  cat .ssh/id_rsa
