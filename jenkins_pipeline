@@ -8,3 +8,4 @@ stage{"2nd stage"} {
 stage{"3rd stage"} {
     sh "touch myjenkins.txt"
     }
+}
