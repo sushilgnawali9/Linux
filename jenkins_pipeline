@@ -1,11 +1,12 @@
-node{
-stage{"first stage"} {
+node()
+{
+stage("first stage") {
     sh "echo hello world 1"
 }
-stage{"2nd stage"} {
+stage("2nd stage") {
     sh "touch helloworld.txt"
 }
-stage{"3rd stage"} {
+stage("3rd stage") {
     sh "touch myjenkins.txt"
     }
 }
